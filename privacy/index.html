@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · Earful</title>
+<meta name="description" content="How Earful for iPhone handles your voice and your words.">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/assets/puff-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="logo" href="/" aria-label="Earful home">
+    <picture>
+      <source srcset="/assets/lockup-dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="/assets/lockup-light.svg" alt="Earful" width="98" height="28">
+    </picture>
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="/privacy/" aria-current="page">Privacy</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="page">
+  <h1>Privacy</h1>
+  <p><strong>Effective October 26, 2026.</strong></p>
+  <p>Earful sends what you say to the bot you name, and nowhere else you didn’t choose.</p>
+  <p><strong>The short version:</strong></p>
+  <ul>
+    <li>Recordings never leave your iPhone.</li>
+    <li>Your words go only to the bot you name, and to your iPhone’s own backups.</li>
+    <li>There’s no Earful server and no account. We don’t receive your notes, and we can’t see them.</li>
+  </ul>
+  <h2>What Earful handles, and where it goes</h2>
+  <p><strong>Your voice.</strong> Earful records your voice when you tap the talk button, or when you use a widget, a control, the Action Button or your Index 01 ring. The recording stays on your iPhone only until it has been turned into words. Then it’s deleted. It’s never sent anywhere, never synced, and never included in your backups.</p>
+  <p><strong>Your words.</strong> Your iPhone turns your voice into text, using Apple’s on-device speech recognition. While you talk, the words also appear on your Lock Screen and in the Dynamic Island, so anyone holding your iPhone can see them. When you send, the text goes to two places, and nowhere else:</p>
+  <ul>
+    <li><strong>The one bot you name</strong> (or your main bot, if you don’t name one). Earful sends it to that bot’s webhook, over an encrypted connection. With the words, the bot gets the bot’s name, the times you recorded and sent the note, and the Voice match result if you use Voice match. It never gets the recording.</li>
+    <li><strong>Your iPhone’s own backups,</strong> if you use iCloud Backup or back up to a computer. Your notes are kept in Earful on your iPhone until you delete them.</li>
+  </ul>
+  <p><strong>Your bots.</strong> Each bot’s name, webhook address and key are saved in your iCloud Keychain, so they’re on your other devices that use the same Apple Account. They stay there if you delete Earful, so your bots are back when you install it again. Earful never shows a key in full. Your Home Screen widget and controls show your bots’ names and colours, and nothing from your notes.</p>
+  <p><strong>Voice match.</strong> Voice match is optional, and it’s off until you set it up. To set it up, you read four short lines aloud on your iPhone. From them, Earful makes a profile of how you sound. It’s a set of numbers, not the recordings, which are deleted once it’s set up. The profile stays in this iPhone’s Keychain. It’s never sent to us or to a bot, and it’s never synced or backed up.</p>
+  <p>Each time you talk, Earful compares your voice with the profile on your iPhone. Your bot gets only the result with the note: whether it sounded like you, and how closely. For the first days, Earful keeps a few of these scores on your iPhone, to learn how you sound on each microphone. If a note doesn’t sound like you, Earful can hold it on your iPhone until you choose to send or delete it. To delete your voice and those scores, go to <strong>Settings › Voice match › My voice</strong> and hold <strong>Hold to delete my voice</strong>.</p>
+  <p><strong>Your Index 01 ring.</strong> The ring sends what you record to Earful on your iPhone over Bluetooth. From there, it’s handled like any other note. Earful isn’t made by or affiliated with Pebble. Pebble’s own app and services follow Pebble’s privacy policy.</p>
+  <p><strong>Diagnostics.</strong> Earful keeps a short log on your iPhone of what the app did, such as "the ring connected" or "a note was sent". The log never includes your words, your recordings, or your bots’ addresses or keys. It stays on your iPhone unless you choose to share it with us.</p>
+  <h2>The bots you choose</h2>
+  <p>A bot is a service you already use that can receive a webhook, such as Grok Bot or an automation of your own. When you send a note to a bot, what happens next is up to that service. It may store your words, use them, or charge you for them, under its own terms and privacy policy. Earful can’t control or undo that. Only send a bot what you’re comfortable sharing with it.</p>
+  <h2>What Earful doesn’t do</h2>
+  <ul>
+    <li>No Earful server, no account and no sign-up.</li>
+    <li>No analytics, no ads, no tracking, and no selling of data.</li>
+    <li>No third-party code that collects your data.</li>
+    <li>No push notifications from a server. Every notification Earful shows is made on your iPhone.</li>
+    <li>Earful doesn’t send your recordings or your words to any server of ours. There isn’t one.</li>
+  </ul>
+  <h2>Apple</h2>
+  <ul>
+    <li><strong>iCloud Keychain</strong> holds your bots’ names, addresses and keys. Apple encrypts it end to end.</li>
+    <li><strong>iCloud Backup</strong> includes your Earful notes (not their recordings) if you use it. Apple encrypts backups. They’re end to end encrypted only if you turn on Advanced Data Protection.</li>
+    <li><strong>Speech recognition</strong> runs on your iPhone. Your iPhone may download Apple’s speech model for your language. No audio is sent to do that.</li>
+    <li>If you choose to share analytics with app developers in your iPhone’s settings, Apple may send us crash reports. They don’t include your notes.</li>
+  </ul>
+  <h2>Recording other people</h2>
+  <p>Earful doesn’t ask the people around you for permission to record. Laws about recording others differ by place. It’s up to you to follow the law where you are.</p>
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>A note:</strong> touch and hold it to delete it. To delete all of them, go to <strong>Settings › Privacy</strong> and hold <strong>Hold to delete all notes</strong>.</li>
+    <li><strong>A bot:</strong> on the bot’s page, hold <strong>Hold to remove</strong>. Its name, address and key are deleted from your iPhone and from your iCloud Keychain on all your devices.</li>
+    <li><strong>All your bots, after deleting Earful:</strong> install Earful again and choose <strong>Start fresh</strong>. Your saved bots are deleted from your iCloud Keychain on all your devices.</li>
+    <li><strong>Your voice:</strong> go to <strong>Settings › Voice match › My voice</strong> and hold <strong>Hold to delete my voice</strong>. Voice match turns off.</li>
+  </ul>
+  <p>Deleting a note in Earful doesn’t delete what a bot already received, or copies in your backups. To remove those, delete them there. Everything else Earful keeps until you delete it.</p>
+  <h2>Your rights</h2>
+  <p>Earful has no server, so we hold no personal data about you to access, correct or delete. Your data is on your iPhone, in your iCloud Keychain, and with the bots you chose. Use the steps above, or contact the bot’s provider for what it holds.</p>
+  <h2>Children</h2>
+  <p>Earful isn’t meant for children under 13, and we don’t knowingly collect anything from them. We don’t collect anything at all.</p>
+  <h2>Changes</h2>
+  <p>If this policy changes, we’ll update this page and its effective date. If a change matters to how your words are handled, the app will tell you before it takes effect.</p>
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:help@earfulapp.com">help@earfulapp.com</a></p>
+</main>
+
+<footer class="site-footer">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/support/">Support</a></li>
+    <li><a href="/privacy/">Privacy</a></li>
+  </ul>
+  <p>Earful for iPhone.</p>
+</footer>
+</body>
+</html>
