@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Earful · Earful</title>
+<meta name="description" content="Open Earful to finish adding your bot.">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/assets/puff-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="logo" href="/" aria-label="Earful home">
+    <picture>
+      <source srcset="/assets/lockup-dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="/assets/lockup-light.svg" alt="Earful" width="98" height="28">
+    </picture>
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="page">
+  <h1>Open Earful</h1>
+  <p class="intro">Your bot sent you back here. Open Earful to finish adding it: you'll land right on the step where you paste its URL and key.</p>
+  <p><a id="open" class="button" href="earful://add">Open Earful</a></p>
+  <p>Don't have Earful yet? It's coming soon to the App Store for iPhone.</p>
+  <script>
+    (function () {
+      var d = new URLSearchParams(location.search).get('d') || '';
+      if (/^[A-Za-z0-9_-]{1,32}$/.test(d)) {
+        document.getElementById('open').href = 'earful://add?d=' + encodeURIComponent(d);
+      }
+    })();
+  </script>
+</main>
+
+<footer class="site-footer">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/support/">Support</a></li>
+    <li><a href="/privacy/">Privacy</a></li>
+  </ul>
+  <p>Earful for iPhone.</p>
+</footer>
+</body>
+</html>

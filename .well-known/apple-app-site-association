@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["99KE3X8MNS.com.earfulapp.ios"],
+        "components": [
+          { "/": "/add", "comment": "the setup message's link back to Earful" },
+          { "/": "/add/*", "comment": "the setup message's link back to Earful" }
+        ]
+      }
+    ]
+  }
+}
