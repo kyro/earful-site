@@ -50,13 +50,14 @@
   <p>Each time you talk, Earful compares your voice with the profile on your iPhone. Your bot gets only the result with the note: whether it sounded like you, and how closely. For the first days, Earful keeps a few of these scores on your iPhone, to learn how you sound on each microphone. If a note doesn’t sound like you, Earful can hold it on your iPhone until you choose to send or delete it. To delete your voice and those scores, go to <strong>Settings › Voice match › My voice</strong> and hold <strong>Hold to delete my voice</strong>.</p>
   <p><strong>Your Index 01 ring.</strong> The ring sends what you record to Earful on your iPhone over Bluetooth. From there, it’s handled like any other note. Earful isn’t made by or affiliated with Pebble. Pebble’s own app and services follow Pebble’s privacy policy.</p>
   <p><strong>Diagnostics.</strong> Earful keeps a short log on your iPhone of what the app did, such as "the ring connected" or "a note was sent". The log never includes your words, your recordings, or your bots’ addresses or keys. It stays on your iPhone unless you choose to share it with us.</p>
+  <p><strong>Usage data.</strong> If <strong>Share usage data</strong> is on, Earful sends us anonymous counts of how the app is used, such as "a note was sent from the widget" or "a bot was connected". They never include your words, your recordings, your bots’ names, addresses or keys, or anything that identifies you. We use PostHog to count them, with IP addresses discarded. It’s on unless you turn it off in <strong>Settings › Privacy</strong>. Turning it off stops it and deletes anything not yet sent.</p>
   <h2>The bots you choose</h2>
   <p>A bot is a service you already use that can receive a webhook, such as Grok Bot or an automation of your own. When you send a note to a bot, what happens next is up to that service. It may store your words, use them, or charge you for them, under its own terms and privacy policy. Earful can’t control or undo that. Only send a bot what you’re comfortable sharing with it.</p>
   <h2>What Earful doesn’t do</h2>
   <ul>
-    <li>No Earful server, no account and no sign-up.</li>
-    <li>No analytics, no ads, no tracking, and no selling of data.</li>
-    <li>No third-party code that collects your data.</li>
+    <li>No Earful server, no account and no sign-up. Usage counts go to PostHog, not to a server of ours.</li>
+    <li>No ads, no tracking across apps, and no selling of data.</li>
+    <li>No third-party code in the app that collects your data. Usage counts are sent by Earful’s own code.</li>
     <li>No push notifications from a server. Every notification Earful shows is made on your iPhone.</li>
     <li>Earful doesn’t send your recordings or your words to any server of ours. There isn’t one.</li>
   </ul>
